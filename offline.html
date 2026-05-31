@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaCalc — Offline</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #000;
+      color: #f5f5f7;
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .icon { font-size: 64px; margin-bottom: 24px; opacity: 0.6; }
+    h1 { font-size: 24px; font-weight: 600; margin-bottom: 8px; color: #6ee7ff; }
+    p { color: rgba(245,245,247,0.55); font-size: 15px; line-height: 1.6; max-width: 300px; }
+    button {
+      margin-top: 28px;
+      padding: 12px 24px;
+      background: #6ee7ff;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="icon">📡</div>
+    <h1>You're offline</h1>
+    <p>NovaCalc needs a connection the first time you visit. Once loaded it works fully offline.</p>
+    <button onclick="location.reload()">Try again</button>
+  </div>
+</body>
+</html>
